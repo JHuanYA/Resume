@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jiahuan Wang — Risk Management Professional</title>
+<meta name="description" content="FRM Part I & II passed. MSc in Information Technology, 3+ years across fintech and securities. Building risk tools end-to-end — stress testing, VaR, and monitoring dashboards.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F766E'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23FFFCF7' text-anchor='middle'%3EJW%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Jiahuan Wang — Risk Management Professional">
+<meta property="og:description" content="FRM Part I & II passed. 3+ years in fintech & securities. Two self-built risk tools — stress testing, VaR, dashboards. Open to risk roles in Hong Kong.">
+<meta property="og:type" content="website">
+<!-- og:image must be an absolute URL; update "resume" here if the repo gets a different name -->
+<meta property="og:image" content="https://jhuanya.github.io/resume/assets/proj-portfolio.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F7F4EE;
+  --bg-alt:#EFEADE;
+  --surface:#FFFCF7;
+  --text:#1F2937;
+  --text-2:#4B5563;
+  --text-3:#5C6470;
+  --accent:#0F766E;
+  --accent-dk:#0D5F58;
+  --accent-lt:#CCFBF1;
+  --accent-muted:#D1FAE5;
+  --warm:#D97706;
+  --warm-lt:#FEF3C7;
+  --warm-muted:#FDE68A;
+  --border:#E5DDC8;
+  --shadow:0 1px 2px rgba(31,41,55,.05),0 1px 3px rgba(31,41,55,.04);
+  --shadow-md:0 4px 14px rgba(31,41,55,.08);
+  --shadow-lg:0 16px 40px rgba(31,41,55,.12);
+  --radius:12px;
+  --radius-sm:8px;
+  --radius-lg:20px;
+  --serif:'Fraunces','Noto Serif SC',Georgia,serif;
+  --sans:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,sans-serif;
+  --maxw:1100px;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+
+/* ===== NAV ===== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,248,244,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:box-shadow .3s ease}
+.nav.scrolled{box-shadow:0 1px 8px rgba(27,35,48,.06)}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{font-family:var(--serif);font-weight:600;font-size:1.15rem;letter-spacing:-.02em;color:var(--text);display:flex;align-items:center;gap:8px}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-size:.875rem;font-weight:500;color:var(--text-2);padding:8px 14px;border-radius:var(--radius-sm);transition:all .2s ease}
+.nav-links a:hover{color:var(--accent);background:var(--accent-lt)}
+.nav-right{display:flex;align-items:center;gap:12px}
+.lang-toggle{font-family:var(--sans);font-size:.8rem;font-weight:600;color:var(--accent);background:var(--accent-lt);border:1.5px solid transparent;padding:7px 16px;border-radius:20px;cursor:pointer;transition:all .2s ease;white-space:nowrap;letter-spacing:.01em}
+.lang-toggle:hover{background:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(15,118,110,.2)}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;padding:6px}
+.menu-btn svg{width:22px;height:22px;color:var(--text)}
+@media(max-width:768px){
+  .nav-links{display:none;position:fixed;top:60px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:12px 16px;gap:2px;box-shadow:var(--shadow-md)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 14px;width:100%;border-radius:var(--radius-sm)}
+  .menu-btn{display:block}
+}
+
+/* ===== LAYOUT ===== */
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+section{padding:72px 0;scroll-margin-top:70px}
+@media(max-width:640px){section{padding:52px 0}}
+.section-head{margin-bottom:40px}
+.section-num{font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:8px}
+.section-title{font-family:var(--serif);font-size:2rem;font-weight:600;letter-spacing:-.025em;color:var(--text);line-height:1.2}
+.section-sub{font-size:.98rem;color:var(--text-2);margin-top:10px;max-width:600px;line-height:1.65}
+@media(max-width:640px){.section-title{font-size:1.55rem}}
+
+/* ===== HERO ===== */
+.hero{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-20%;right:-15%;width:600px;height:600px;background:radial-gradient(circle,rgba(15,118,110,.07) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-10%;left:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(217,119,6,.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1;max-width:680px}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:500;color:var(--accent);background:var(--accent-lt);padding:6px 14px;border-radius:20px;margin-bottom:28px;letter-spacing:.01em}
+.hero-tag .dot{width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero-name{font-family:var(--serif);font-size:clamp(2.8rem,7.5vw,4.5rem);font-weight:600;letter-spacing:-.035em;line-height:1.02;color:var(--text);margin-bottom:12px;font-variation-settings:'opsz' 144}
+.hero-name .accent{color:var(--accent);position:relative}
+.hero-title{font-family:var(--sans);font-size:clamp(1.05rem,2.8vw,1.35rem);font-weight:500;color:var(--text-2);margin-bottom:24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.hero-title .sep{color:var(--warm);font-weight:400;font-size:.9em}
+.hero-tagline{font-size:1.02rem;color:var(--text-2);line-height:1.75;max-width:560px;margin-bottom:36px;font-weight:400}
+.hero-links{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:500;padding:11px 22px;border-radius:var(--radius-sm);transition:all .25s ease;cursor:pointer;border:none}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(15,118,110,.25)}
+.btn-primary:hover{background:var(--accent-dk);transform:translateY(-1px);box-shadow:0 4px 16px rgba(15,118,110,.3)}
+.btn-ghost{background:transparent;color:var(--text);border:1.5px solid var(--border)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-lt)}
+.btn svg{width:16px;height:16px}
+.hero-meta{display:flex;gap:32px;margin-top:48px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--border)}
+.hero-meta-item{display:flex;flex-direction:column;gap:4px}
+.hero-meta-label{font-size:.72rem;color:var(--text-3);text-transform:uppercase;letter-spacing:.08em;font-weight:500}
+.hero-meta-value{font-size:.92rem;font-weight:600;color:var(--text)}
+
+/* ===== ABOUT ===== */
+.about-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.about-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:linear-gradient(180deg,var(--accent),var(--warm))}
+.about-text{font-size:1rem;line-height:1.8;color:var(--text-2)}
+.about-text strong{color:var(--text);font-weight:600}
+.about-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+@media(max-width:640px){.about-highlights{grid-template-columns:1fr}}
+.about-hl{display:flex;align-items:flex-start;gap:14px;padding:20px;background:var(--bg-alt);border-radius:var(--radius);transition:all .2s ease}
+.about-hl:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.about-hl-icon{width:40px;height:40px;border-radius:10px;background:var(--accent-lt);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.about-hl-icon svg{width:20px;height:20px;color:var(--accent)}
+.about-hl-title{font-size:.86rem;font-weight:600;color:var(--text);margin-bottom:4px}
+.about-hl-desc{font-size:.78rem;color:var(--text-2);line-height:1.55}
+
+/* ===== SKILLS ===== */
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:768px){.skills-grid{grid-template-columns:1fr}}
+.skill-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:all .25s ease}
+.skill-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 25%,var(--border))}
+.skill-cat{font-size:.78rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.skill-cat svg{width:16px;height:16px}
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px}
+.skill-tag{font-size:.82rem;font-weight:500;padding:6px 14px;border-radius:20px;background:var(--bg-alt);color:var(--text-2);border:1px solid var(--border);transition:all .2s ease}
+.skill-tag:hover{background:var(--accent-lt);color:var(--accent-dk);border-color:transparent}
+.skill-tag .lvl{font-size:.7rem;color:var(--text-3);margin-left:4px;font-weight:400}
+
+/* ===== EXPERIENCE ===== */
+.timeline{position:relative;padding-left:0}
+.timeline::before{content:'';position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--accent),var(--border))}
+.tl-item{position:relative;padding-left:48px;padding-bottom:40px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:6px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2.5px solid var(--accent);z-index:1;box-shadow:0 0 0 4px var(--bg)}
+.tl-item.current::before{background:var(--accent)}
+.tl-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:6px;flex-wrap:wrap}
+.tl-company{font-family:var(--serif);font-size:1.12rem;font-weight:600;color:var(--text);letter-spacing:-.01em}
+.tl-role{font-size:.88rem;color:var(--accent);font-weight:600}
+.tl-date{font-size:.8rem;color:var(--text-3);white-space:nowrap;font-weight:500;font-family:var(--sans)}
+.tl-location{font-size:.8rem;color:var(--text-3);margin-bottom:12px}
+.tl-points{display:flex;flex-direction:column;gap:12px}
+.tl-point{font-size:.9rem;line-height:1.7;color:var(--text-2)}
+.tl-point strong{color:var(--text);font-weight:600}
+.tl-point em{font-style:normal;color:var(--accent);font-weight:600}
+@media(max-width:640px){
+  .tl-header{flex-direction:column;gap:2px}
+  .tl-date{font-size:.75rem}
+}
+
+/* ===== PROJECTS ===== */
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+@media(max-width:768px){.proj-grid{grid-template-columns:1fr}}
+.proj-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:all .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;position:relative}
+.proj-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 30%,var(--border))}
+.proj-top{height:6px;background:linear-gradient(90deg,var(--accent),var(--warm))}
+.proj-shot{display:block;border-bottom:1px solid var(--border)}
+.shot-bar{display:flex;gap:6px;padding:10px 14px;background:var(--bg-alt);border-bottom:1px solid var(--border)}
+.shot-bar span{width:9px;height:9px;border-radius:50%;background:var(--border)}
+.proj-shot img{display:block;width:100%;height:200px;object-fit:cover;object-position:top center;transform-origin:top center;transition:transform .45s ease}
+.proj-shot:hover img{transform:scale(1.02)}
+@media(max-width:640px){.proj-shot img{height:160px}}
+.proj-body{padding:28px;flex:1;display:flex;flex-direction:column}
+.proj-icon{width:44px;height:44px;border-radius:12px;background:var(--accent-lt);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.proj-icon svg{width:22px;height:22px;color:var(--accent)}
+.proj-name{font-family:var(--serif);font-size:1.2rem;font-weight:600;color:var(--text);line-height:1.35;margin-bottom:10px;letter-spacing:-.01em}
+.proj-desc{font-size:.88rem;line-height:1.7;color:var(--text-2);margin-bottom:18px;flex:1}
+.proj-highlights{display:flex;flex-direction:column;gap:10px;margin-bottom:18px}
+.proj-hl{display:flex;align-items:flex-start;gap:10px;font-size:.82rem;color:var(--text-2);line-height:1.55}
+.proj-hl::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:8px}
+.proj-tech{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.proj-tech span{font-size:.74rem;font-weight:500;padding:4px 12px;border-radius:16px;background:var(--bg-alt);color:var(--text-2);border:1px solid var(--border)}
+.proj-links{display:flex;gap:10px;flex-wrap:wrap}
+.proj-links a{font-size:.84rem;font-weight:600;padding:10px 18px;border-radius:var(--radius-sm);display:inline-flex;align-items:center;gap:8px;transition:all .2s ease;cursor:pointer;text-decoration:none;border:1.5px solid transparent}
+.proj-links .gh{background:var(--text);color:#fff;border-color:var(--text)}
+.proj-links .gh:hover{background:#000;border-color:#000;transform:translateY(-1px);box-shadow:0 4px 12px rgba(31,41,55,.25)}
+.proj-links .demo{background:var(--accent);color:#fff;border-color:var(--accent)}
+.proj-links .demo:hover{background:var(--accent-dk);border-color:var(--accent-dk);transform:translateY(-1px);box-shadow:0 4px 12px rgba(15,118,110,.3)}
+.proj-links a svg{width:16px;height:16px;flex-shrink:0}
+.proj-links a .ext-icon{width:12px;height:12px;opacity:.7;margin-left:2px}
+
+/* ===== EDUCATION ===== */
+.edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media(max-width:768px){.edu-grid{grid-template-columns:1fr}}
+.edu-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:all .25s ease}
+.edu-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 20%,var(--border))}
+.edu-school{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--text);margin-bottom:5px;letter-spacing:-.01em}
+.edu-degree{font-size:.88rem;color:var(--accent);font-weight:600;margin-bottom:6px}
+.edu-date{font-size:.78rem;color:var(--text-3);margin-bottom:10px}
+.edu-courses{font-size:.82rem;color:var(--text-2);line-height:1.6}
+.edu-courses strong{font-weight:600;color:var(--text-2)}
+.edu-award{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;color:var(--warm);font-weight:600;margin-top:10px;padding:5px 12px;background:var(--warm-lt);border-radius:14px}
+
+/* ===== CONTACT ===== */
+.contact{text-align:center;background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-top:20px}
+.contact .section-head{text-align:center}
+.contact .section-sub{margin-left:auto;margin-right:auto}
+.contact-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:32px;max-width:880px;margin-left:auto;margin-right:auto}
+.contact-link{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:16px 24px;font-size:.9rem;font-weight:500;color:var(--text);transition:all .25s ease;text-decoration:none;text-align:left}
+.contact-link:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:var(--accent);background:var(--surface)}
+.contact-link svg{width:20px;height:20px;color:var(--accent);flex-shrink:0}
+.contact-link .label{font-size:.76rem;color:var(--text-3);font-weight:400}
+@media(max-width:640px){
+  .contact-links{grid-template-columns:1fr;max-width:420px}
+  .contact-link{justify-content:center;text-align:center}
+}
+
+/* ===== FOOTER ===== */
+.footer{text-align:center;padding:32px 0;border-top:1px solid var(--border)}
+.footer p{font-size:.8rem;color:var(--text-3)}
+
+/* ===== ANIMATIONS ===== */
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.stagger > *{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.stagger.visible > *{opacity:1;transform:translateY(0)}
+.stagger.visible > *:nth-child(2){transition-delay:.08s}
+.stagger.visible > *:nth-child(3){transition-delay:.16s}
+.stagger.visible > *:nth-child(4){transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .fade-up,.stagger > *{opacity:1!important;transform:none!important}
+}
+</style>
+<noscript>
+<style>
+  .fade-up,.stagger > *{opacity:1!important;transform:none!important}
+  .nav-links{display:flex!important}
+  .menu-btn{display:none!important}
+</style>
+</noscript>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">JW<span>.</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#education" data-i18n="nav.education">Education</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle">中文</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container hero-inner fade-up">
+    <div class="hero-tag"><span class="dot"></span><span data-i18n="hero.status">Open to opportunities in Hong Kong</span></div>
+    <h1 class="hero-name" data-i18n="hero.name">Jiahuan Wang</h1>
+    <div class="hero-title">
+      <span data-i18n="hero.title1">Risk Management</span>
+      <span class="sep">&times;</span>
+      <span data-i18n="hero.title2">Data &amp; Technology</span>
+    </div>
+    <p class="hero-tagline" data-i18n="hero.tagline">Passed FRM Part I &amp; II. MSc in Information Technology, with 3+ years across fintech and securities. I build risk tools that are actually used — from stress-testing dashboards to AI-driven monitoring systems.</p>
+    <div class="hero-links">
+      <a href="#projects" class="btn btn-primary" data-i18n="hero.cta1">View Projects</a>
+      <a href="mailto:joya.wang@hotmail.com" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span data-i18n="hero.cta2">Get in touch</span>
+      </a>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="hero-meta-label" data-i18n="hero.locLabel">Location</span>
+        <span class="hero-meta-value" data-i18n="hero.locValue">Hong Kong SAR</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label" data-i18n="hero.expLabel">Experience</span>
+        <span class="hero-meta-value" data-i18n="hero.expValue">3+ years</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label" data-i18n="hero.certLabel">Certification</span>
+        <span class="hero-meta-value" data-i18n="hero.certValue">FRM Part I &amp; II Passed</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label" data-i18n="hero.workLabel">Work Eligibility</span>
+        <span class="hero-meta-value" data-i18n="hero.workValue">Eligible to work in Hong Kong (IANG)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">01</span>
+      <h2 class="section-title" data-i18n="about.title">About Me</h2>
+      <p class="section-sub" data-i18n="about.sub">From operations to risk — a deliberate path. FRM Part I &amp; II passed, two risk tools built from scratch, 3+ years making controls work in practice.</p>
+    </div>
+    <div class="about-card fade-up">
+      <p class="about-text" data-i18n="about.text">I came to risk the deliberate way. Over 3+ years in fintech and securities operations, I worked where risk actually surfaces — closing 300+ defects before release, stopping data inconsistencies before they spread, monitoring anomalies after launch. I then passed FRM Part I &amp; II to formalize the frameworks — market, credit, and operational risk, VaR, stress testing — and built two risk tools from scratch to prove that methodology can ship as working software. <strong>Operations grounding + FRM frameworks + self-built risk tools = a risk candidate who can execute, not just analyze.</strong></p>
+      <div class="about-highlights">
+        <div class="about-hl">
+          <div class="about-hl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <div class="about-hl-title" data-i18n="about.hl1Title">FRM Frameworks</div>
+            <div class="about-hl-desc" data-i18n="about.hl1Desc">Market / credit / operational risk, VaR &amp; CVaR, stress testing</div>
+          </div>
+        </div>
+        <div class="about-hl">
+          <div class="about-hl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <div class="about-hl-title" data-i18n="about.hl2Title">Operations Grounding</div>
+            <div class="about-hl-desc" data-i18n="about.hl2Desc">Where risk surfaces: release testing, anomaly monitoring, data integrity</div>
+          </div>
+        </div>
+        <div class="about-hl">
+          <div class="about-hl-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <div class="about-hl-title" data-i18n="about.hl3Title">Risk Dashboards</div>
+            <div class="about-hl-desc" data-i18n="about.hl3Desc">Two tools built from scratch — household stress testing &amp; portfolio VaR</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">02</span>
+      <h2 class="section-title" data-i18n="skills.title">Core Skills</h2>
+      <p class="section-sub" data-i18n="skills.sub">Risk knowledge first — then the data stack and AI workflow that turn it into working systems.</p>
+    </div>
+    <div class="skills-grid stagger">
+      <div class="skill-card">
+        <div class="skill-cat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span data-i18n="skills.cat0">Risk Knowledge</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-i18n="skills.rk1">Market Risk</span>
+          <span class="skill-tag" data-i18n="skills.rk2">Credit Risk</span>
+          <span class="skill-tag" data-i18n="skills.rk3">Operational Risk</span>
+          <span class="skill-tag">VaR / CVaR</span>
+          <span class="skill-tag" data-i18n="skills.rk4">Stress Testing</span>
+          <span class="skill-tag" data-i18n="skills.rk5">Basel III</span>
+          <span class="skill-tag" data-i18n="skills.rk6">Liquidity Risk</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-cat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+          <span data-i18n="skills.cat1">Data Analysis &amp; Tools</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">ECharts</span>
+          <span class="skill-tag" data-i18n="skills.excel">Advanced Excel</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-cat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span data-i18n="skills.cat3">Languages</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-i18n="skills.lang1">Mandarin<span class="lvl">Native</span></span>
+          <span class="skill-tag" data-i18n="skills.lang2">English<span class="lvl">Fluent</span></span>
+          <span class="skill-tag" data-i18n="skills.lang3">Cantonese<span class="lvl">Conversational</span></span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-cat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span data-i18n="skills.cat2">AI-Assisted Workflow</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Cursor</span>
+          <span class="skill-tag">GitHub Copilot</span>
+          <span class="skill-tag">Claude</span>
+          <span class="skill-tag">DeepSeek</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">03</span>
+      <h2 class="section-title" data-i18n="exp.title">Work Experience</h2>
+      <p class="section-sub" data-i18n="exp.sub">3+ years across fintech, securities, and research — building risk controls, optimizing data quality, and driving AI-powered operations.</p>
+    </div>
+    <div class="timeline fade-up">
+
+      <div class="tl-item current">
+        <div class="tl-header">
+          <div>
+            <div class="tl-company" data-i18n="exp1.company">Upway Group</div>
+            <div class="tl-role" data-i18n="exp1.role">Product Operations Specialist</div>
+          </div>
+          <div class="tl-date" data-i18n="exp1.date">Jun 2024 — Present</div>
+        </div>
+        <div class="tl-location" data-i18n="exp1.location">Hong Kong</div>
+        <div class="tl-points">
+          <p class="tl-point" data-i18n="exp1.p1">Designed data dashboards for the community-app admin backend and eliminated frontend-backend inconsistencies; fixed <strong>50+ defects across 7 modules</strong> before they could propagate.</p>
+          <p class="tl-point" data-i18n="exp1.p2">Ran scenario and compatibility testing across 3 release cycles, driving <strong>300+ defect closures</strong> and keeping quality issues out of production.</p>
+          <p class="tl-point" data-i18n="exp1.p3">Built an AI-powered content deployment pipeline and monitored post-launch data to catch anomalies early, cutting manual steps and errors.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-header">
+          <div>
+            <div class="tl-company" data-i18n="exp2.company">The Hong Kong Polytechnic University</div>
+            <div class="tl-role" data-i18n="exp2.role">Research Assistant (Part-time)</div>
+          </div>
+          <div class="tl-date" data-i18n="exp2.date">Dec 2022 — May 2024</div>
+        </div>
+        <div class="tl-location" data-i18n="exp2.location">Hong Kong</div>
+        <div class="tl-points">
+          <p class="tl-point" data-i18n="exp2.p1">Cleaned and standardized multi-modal radiation-oncology data to research-grade accuracy, integrity, and usability.</p>
+          <p class="tl-point" data-i18n="exp2.p2">Contributed to the upgrade of the Big Data Reporting Platform's UI and interaction logic, making it easier for clinical end users to use.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-header">
+          <div>
+            <div class="tl-company" data-i18n="exp3.company">SDIC Securities Co., Ltd.</div>
+            <div class="tl-role" data-i18n="exp3.role">Product Manager Assistant</div>
+          </div>
+          <div class="tl-date" data-i18n="exp3.date">Feb 2022 — Aug 2022</div>
+        </div>
+        <div class="tl-location" data-i18n="exp3.location">Shenzhen, China</div>
+        <div class="tl-points">
+          <p class="tl-point" data-i18n="exp3.p1">Segmented customers with decision-tree models and launched 8 differentiated outreach scenarios, lifting sales conversion from 13.45% to <strong>22.58%</strong>.</p>
+          <p class="tl-point" data-i18n="exp3.p2">Built customer-behavior tracking with the development team for risk-signal detection; mined the FAQ knowledge base to cut AI-to-human transfers by <strong>13%</strong>.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-header">
+          <div>
+            <div class="tl-company" data-i18n="exp4.company">Casstime Technology Co., Ltd.</div>
+            <div class="tl-role" data-i18n="exp4.role">Data Analyst (Intern)</div>
+          </div>
+          <div class="tl-date" data-i18n="exp4.date">Jun 2021 — Aug 2021</div>
+        </div>
+        <div class="tl-location" data-i18n="exp4.location">Shenzhen, China</div>
+        <div class="tl-points">
+          <p class="tl-point" data-i18n="exp4.p1">Built interactive Tableau dashboards for daily sales data across 11 regions, supporting data-driven performance monitoring.</p>
+          <p class="tl-point" data-i18n="exp4.p2">Handled <strong>80+ data requests</strong> with efficient SQL and standardized reporting templates.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">04</span>
+      <h2 class="section-title" data-i18n="proj.title">Portfolio Projects</h2>
+      <p class="section-sub" data-i18n="proj.sub">Two risk management tools built from scratch — designed, engineered, and deployed as personal projects.</p>
+    </div>
+    <div class="proj-grid stagger">
+
+      <!-- Project 1 -->
+      <div class="proj-card">
+        <div class="proj-top"></div>
+        <a class="proj-shot" href="https://jhuanya.github.io/household-risk-desk/web/index.html" target="_blank" rel="noopener noreferrer">
+          <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <img src="assets/proj-household.png" alt="Household Financial Risk Desk — dashboard interface preview" width="1280" height="800" loading="lazy" data-i18n-alt="p1.alt">
+        </a>
+        <div class="proj-body">
+          <div class="proj-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="proj-name" data-i18n="p1.name">Household Financial Risk Desk</h3>
+          <p class="proj-desc" data-i18n="p1.desc">A household liquidity &amp; solvency risk monitoring dashboard. Define risk events &rarr; measure current state &rarr; set limits &rarr; stress test &rarr; actionable recommendations. Dual-frontend (HTML + Streamlit) with a shared calculation engine aligned to &lt; 1 HKD precision.</p>
+          <div class="proj-highlights">
+            <div class="proj-hl" data-i18n="p1.h1">7 risk limits with traffic-light system (Green / Yellow / Red)</div>
+            <div class="proj-hl" data-i18n="p1.h2">10 pre-built stress scenarios + 6 custom real-time sliders</div>
+            <div class="proj-hl" data-i18n="p1.h3">Multi-currency support (HKD / USD / CNY) with live FX</div>
+          </div>
+          <div class="proj-tech">
+            <span>HTML</span><span>JavaScript</span><span>Plotly.js</span><span>Python</span><span>Streamlit</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/JHuanYA/household-risk-desk" target="_blank" rel="noopener noreferrer" class="gh">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+              <span data-i18n="proj.code">GitHub</span>
+              <svg class="ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://jhuanya.github.io/household-risk-desk/web/index.html" target="_blank" rel="noopener noreferrer" class="demo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="proj.demo">Live Demo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card">
+        <div class="proj-top"></div>
+        <a class="proj-shot" href="https://jhuanya.github.io/Portfolio-Risk-Analysis-Desk/frontend/index.html" target="_blank" rel="noopener noreferrer">
+          <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <img src="assets/proj-portfolio.png" alt="Portfolio Risk Analysis Desk — dashboard interface preview" width="1280" height="800" loading="lazy" data-i18n-alt="p2.alt">
+        </a>
+        <div class="proj-body">
+          <div class="proj-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="proj-name" data-i18n="p2.name">Portfolio Risk Analysis Desk</h3>
+          <p class="proj-desc" data-i18n="p2.desc">A portfolio risk analysis dashboard with Python data layer + pure static frontend. Computes VaR (historical + parametric), CVaR, Sharpe/Sortino ratios, Beta, Max Drawdown, HHI concentration, and Contribution to Risk — all in-browser real-time calculation with zero backend dependency.</p>
+          <div class="proj-highlights">
+            <div class="proj-hl" data-i18n="p2.h1">VaR &amp; CVaR at 95% / 99% — historical simulation &amp; parametric (variance-covariance) methods</div>
+            <div class="proj-hl" data-i18n="p2.h2">7 ECharts visualizations, 10 risk indicator cards, 17 currency suffixes</div>
+            <div class="proj-hl" data-i18n="p2.h3">All risk metrics computed client-side; Python only fetches raw data</div>
+          </div>
+          <div class="proj-tech">
+            <span>Python</span><span>yfinance</span><span>pandas</span><span>Vanilla JS</span><span>ECharts 5</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/JHuanYA/Portfolio-Risk-Analysis-Desk" target="_blank" rel="noopener noreferrer" class="gh">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+              <span data-i18n="proj.code2">GitHub</span>
+              <svg class="ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="https://jhuanya.github.io/Portfolio-Risk-Analysis-Desk/frontend/index.html" target="_blank" rel="noopener noreferrer" class="demo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span data-i18n="proj.demo2">Live Demo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">05</span>
+      <h2 class="section-title" data-i18n="edu.title">Education</h2>
+    </div>
+    <div class="edu-grid stagger">
+      <div class="edu-card">
+        <div class="edu-school" data-i18n="edu1.school">The Hong Kong Polytechnic University</div>
+        <div class="edu-degree" data-i18n="edu1.degree">MSc in Information Technology</div>
+        <div class="edu-date" data-i18n="edu1.date">Sep 2022 — Jan 2024 · Hong Kong</div>
+        <div class="edu-courses" data-i18n="edu1.courses"><strong>Key courses:</strong> Financial Computing, AI Concepts, Machine Learning</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-school" data-i18n="edu2.school">Jiangxi University of Finance and Economics</div>
+        <div class="edu-degree" data-i18n="edu2.degree">BSc in Information Management and Information Technology (Financial Technology)</div>
+        <div class="edu-date" data-i18n="edu2.date">Sep 2017 — Jun 2021 · Jiangxi, China</div>
+        <div class="edu-courses" data-i18n="edu2.courses"><strong>Key courses:</strong> Financial Big Data Analysis, Database Development, Mathematical Modeling, Economics</div>
+        <div class="edu-award" data-i18n="edu2.award">1st Prize — China Mathematical Contest in Modeling (Jiangxi, 2019)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="section-num">06</span>
+      <h2 class="section-title" data-i18n="contact.title">Let's Connect</h2>
+      <p class="section-sub" data-i18n="contact.sub">Open to risk management roles in Hong Kong. Feel free to reach out.</p>
+    </div>
+    <div class="contact-links fade-up">
+      <a href="mailto:joya.wang@hotmail.com" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <div>
+          <div data-i18n="contact.emailLabel">Email</div>
+          <div class="label">joya.wang@hotmail.com</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/jiahuan-wang-joya" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.33-3.27c-.86 0-1.84.43-2.37 1.3v-1.1h-2.7v7.37h2.7v-4.02c0-.86.62-1.46 1.44-1.46.8 0 1.26.57 1.26 1.46v4.02h2.7M6.88 8.56a1.56 1.56 0 1 0 0-3.12 1.56 1.56 0 0 0 0 3.12M7.75 15.5v-7.4H5.5v7.4h2.25"/></svg>
+        <div>
+          <div>LinkedIn</div>
+          <div class="label">/jiahuan-wang-joya</div>
+        </div>
+      </a>
+      <a href="https://github.com/JHuanYA" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        <div>
+          <div>GitHub</div>
+          <div class="label">/JHuanYA</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p data-i18n="footer.text">&copy; 2026 Jiahuan Wang. Built with intention.</p>
+</footer>
+
+<script>
+// ===== i18n DATA =====
+const i18n = {
+  en: {
+    "doc.title":"Jiahuan Wang — Risk Management Professional",
+    "nav.about":"About","nav.skills":"Skills","nav.experience":"Experience",
+    "nav.projects":"Projects","nav.education":"Education","nav.contact":"Contact",
+    "hero.status":"Open to opportunities in Hong Kong",
+    "hero.name":"Jiahuan Wang",
+    "hero.title1":"Risk Management","hero.title2":"Data & Technology",
+    "hero.tagline":'Passed FRM Part I & II. MSc in Information Technology, with 3+ years across fintech and securities. I build risk tools that are actually used \u2014 from stress-testing dashboards to AI-driven monitoring systems.',
+    "hero.cta1":"View Projects","hero.cta2":"Get in touch",
+    "hero.locLabel":"Location","hero.locValue":"Hong Kong SAR",
+    "hero.expLabel":"Experience","hero.expValue":"3+ years",
+    "hero.certLabel":"Certification","hero.certValue":"FRM Part I & II Passed",
+    "hero.workLabel":"Work Eligibility","hero.workValue":"Eligible to work in Hong Kong (IANG)",
+    "about.title":"About Me",
+    "about.sub":"From operations to risk \u2014 a deliberate path. FRM Part I & II passed, two risk tools built from scratch, 3+ years making controls work in practice.",
+    "about.text":'I came to risk the deliberate way. Over 3+ years in fintech and securities operations, I worked where risk actually surfaces \u2014 closing 300+ defects before release, stopping data inconsistencies before they spread, monitoring anomalies after launch. I then passed FRM Part I & II to formalize the frameworks \u2014 market, credit, and operational risk, VaR, stress testing \u2014 and built two risk tools from scratch to prove that methodology can ship as working software. <strong>Operations grounding + FRM frameworks + self-built risk tools = a risk candidate who can execute, not just analyze.</strong>',
+    "about.hl1Title":"FRM Frameworks","about.hl1Desc":"Market / credit / operational risk, VaR & CVaR, stress testing",
+    "about.hl2Title":"Operations Grounding","about.hl2Desc":"Where risk surfaces: release testing, anomaly monitoring, data integrity",
+    "about.hl3Title":"Risk Dashboards","about.hl3Desc":"Two tools built from scratch \u2014 household stress testing & portfolio VaR",
+    "skills.title":"Core Skills",
+    "skills.sub":"Risk knowledge first \u2014 then the data stack and AI workflow that turn it into working systems.",
+    "skills.cat0":"Risk Knowledge",
+    "skills.cat1":"Data Analysis & Tools","skills.cat2":"AI-Assisted Workflow","skills.cat3":"Languages",
+    "skills.rk1":"Market Risk","skills.rk2":"Credit Risk","skills.rk3":"Operational Risk","skills.rk4":"Stress Testing","skills.rk5":"Basel III","skills.rk6":"Liquidity Risk",
+    "skills.excel":"Advanced Excel",
+    "skills.lang1":'Mandarin<span class="lvl">Native</span>',
+    "skills.lang2":'English<span class="lvl">Fluent</span>',
+    "skills.lang3":'Cantonese<span class="lvl">Conversational</span>',
+    "exp.title":"Work Experience",
+    "exp.sub":"3+ years across fintech, securities, and research \u2014 building risk controls, optimizing data quality, and driving AI-powered operations.",
+    "exp1.company":"Upway Group","exp1.role":"Product Operations Specialist",
+    "exp1.date":"Jun 2024 \u2014 Present","exp1.location":"Hong Kong",
+    "exp1.p1":'Designed data dashboards for the community-app admin backend and eliminated frontend-backend inconsistencies; fixed <strong>50+ defects across 7 modules</strong> before they could propagate.',
+    "exp1.p2":'Ran scenario and compatibility testing across 3 release cycles, driving <strong>300+ defect closures</strong> and keeping quality issues out of production.',
+    "exp1.p3":'Built an AI-powered content deployment pipeline and monitored post-launch data to catch anomalies early, cutting manual steps and errors.',
+    "exp2.company":"The Hong Kong Polytechnic University","exp2.role":"Research Assistant (Part-time)",
+    "exp2.date":"Dec 2022 \u2014 May 2024","exp2.location":"Hong Kong",
+    "exp2.p1":'Cleaned and standardized multi-modal radiation-oncology data to research-grade accuracy, integrity, and usability.',
+    "exp2.p2":'Contributed to the upgrade of the Big Data Reporting Platform\u2019s UI and interaction logic, making it easier for clinical end users to use.',
+    "exp3.company":"SDIC Securities Co., Ltd.","exp3.role":"Product Manager Assistant",
+    "exp3.date":"Feb 2022 \u2014 Aug 2022","exp3.location":"Shenzhen, China",
+    "exp3.p1":'Segmented customers with decision-tree models and launched 8 differentiated outreach scenarios, lifting sales conversion from 13.45% to <strong>22.58%</strong>.',
+    "exp3.p2":'Built customer-behavior tracking with the development team for risk-signal detection; mined the FAQ knowledge base to cut AI-to-human transfers by <strong>13%</strong>.',
+    "exp4.company":"Casstime Technology Co., Ltd.","exp4.role":"Data Analyst (Intern)",
+    "exp4.date":"Jun 2021 \u2014 Aug 2021","exp4.location":"Shenzhen, China",
+    "exp4.p1":'Built interactive Tableau dashboards for daily sales data across 11 regions, supporting data-driven performance monitoring.',
+    "exp4.p2":'Handled <strong>80+ data requests</strong> with efficient SQL and standardized reporting templates.',
+    "proj.title":"Portfolio Projects",
+    "proj.sub":"Two risk management tools built from scratch \u2014 designed, engineered, and deployed as personal projects.",
+    "p1.name":"Household Financial Risk Desk",
+    "p1.alt":"Household Financial Risk Desk — dashboard interface preview",
+    "p1.desc":'A household liquidity & solvency risk monitoring dashboard. Define risk events \u2192 measure current state \u2192 set limits \u2192 stress test \u2192 actionable recommendations. Dual-frontend (HTML + Streamlit) with a shared calculation engine aligned to < 1 HKD precision.',
+    "p1.h1":"7 risk limits with traffic-light system (Green / Yellow / Red)",
+    "p1.h2":"10 pre-built stress scenarios + 6 custom real-time sliders",
+    "p1.h3":"Multi-currency support (HKD / USD / CNY) with live FX",
+    "p2.name":"Portfolio Risk Analysis Desk",
+    "p2.alt":"Portfolio Risk Analysis Desk — dashboard interface preview",
+    "p2.desc":'A portfolio risk analysis dashboard with Python data layer + pure static frontend. Computes VaR (historical + parametric), CVaR, Sharpe/Sortino ratios, Beta, Max Drawdown, HHI concentration, and Contribution to Risk \u2014 all in-browser real-time calculation with zero backend dependency.',
+    "p2.h1":"VaR & CVaR at 95% / 99% — historical simulation & parametric (variance-covariance) methods",
+    "p2.h2":"7 ECharts visualizations, 10 risk indicator cards, 17 currency suffixes",
+    "p2.h3":"All risk metrics computed client-side; Python only fetches raw data",
+    "proj.code":"GitHub","proj.code2":"GitHub","proj.demo":"Live Demo","proj.demo2":"Live Demo",
+    "edu.title":"Education",
+    "edu1.school":"The Hong Kong Polytechnic University",
+    "edu1.degree":"MSc in Information Technology",
+    "edu1.date":"Sep 2022 \u2014 Jan 2024 \u00b7 Hong Kong",
+    "edu1.courses":"<strong>Key courses:</strong> Financial Computing, AI Concepts, Machine Learning",
+    "edu2.school":"Jiangxi University of Finance and Economics",
+    "edu2.degree":"BSc in Information Management and Information Technology (Financial Technology)",
+    "edu2.date":"Sep 2017 \u2014 Jun 2021 \u00b7 Jiangxi, China",
+    "edu2.courses":"<strong>Key courses:</strong> Financial Big Data Analysis, Database Development, Mathematical Modeling, Economics",
+    "edu2.award":"1st Prize \u2014 China Mathematical Contest in Modeling (Jiangxi, 2019)",
+    "contact.title":"Let's Connect",
+    "contact.sub":"Open to risk management roles in Hong Kong. Eligible to work in Hong Kong (IANG). Feel free to reach out.",
+    "contact.emailLabel":"Email",
+    "footer.text":"\u00a9 2026 Jiahuan Wang. Built with intention."
+  },
+  zh: {
+    "doc.title":"王嘉欢 — 风险管理个人主页",
+    "nav.about":"关于","nav.skills":"技能","nav.experience":"经历",
+    "nav.projects":"项目","nav.education":"教育","nav.contact":"联系",
+    "hero.status":"正在寻找香港的工作机会",
+    "hero.name":"王嘉欢",
+    "hero.title1":"风险管理","hero.title2":"数据与技术",
+    "hero.tagline":'已通过FRM Part I & II考试，信息技术硕士，3年以上金融科技与证券行业经验。我打造的是真正能落地使用的风控工具——从压力测试看板到AI驱动的监控系统。',
+    "hero.cta1":"查看项目","hero.cta2":"联系我",
+    "hero.locLabel":"地点","hero.locValue":"中国香港",
+    "hero.expLabel":"经验","hero.expValue":"3年以上",
+    "hero.certLabel":"认证","hero.certValue":"FRM Part I & II 已通过",
+    "hero.workLabel":"工作资格","hero.workValue":"可合法在港工作（IANG签证）",
+    "about.title":"关于我",
+    "about.sub":"从运营到风控——一条刻意规划的路径。已通过FRM Part I & II，从零自建两个风控工具，3年以上一线实践经验。",
+    "about.text":'我走向风控是一条刻意规划的路。在金融科技与证券行业的3年多运营工作中，我身处风险真正暴露的一线——上线前推动关闭300余个缺陷、在数据不一致扩散前将其拦截、上线后持续监控异常。为把一线实践系统化，我通过了FRM Part I & II考试（市场、信用、操作风险框架，VaR与压力测试），并从零构建了两个风控工具，验证方法论能够落地为可运行的软件。<strong>运营积累 + FRM框架 + 自建风控工具 = 能落地执行的风控人选。</strong>',
+    "about.hl1Title":"FRM知识框架","about.hl1Desc":"市场、信用、操作风险，VaR/CVaR，压力测试",
+    "about.hl2Title":"运营一线经验","about.hl2Desc":"风险真正暴露的地方：发布测试、异常监控、数据一致性",
+    "about.hl3Title":"自建风控工具","about.hl3Desc":"从零构建的两个工具：家庭压力测试与组合VaR看板",
+    "skills.title":"核心技能",
+    "skills.sub":"先有风险知识框架，再有把它变成系统的数据工具与AI工作流。",
+    "skills.cat0":"风险知识",
+    "skills.cat1":"数据分析与工具","skills.cat2":"AI 辅助工作流","skills.cat3":"语言",
+    "skills.rk1":"市场风险","skills.rk2":"信用风险","skills.rk3":"操作风险","skills.rk4":"压力测试","skills.rk5":"巴塞尔协议 III","skills.rk6":"流动性风险",
+    "skills.excel":"高级Excel",
+    "skills.lang1":'普通话<span class="lvl">母语</span>',
+    "skills.lang2":'英语<span class="lvl">流利</span>',
+    "skills.lang3":'粤语<span class="lvl">会话水平</span>',
+    "exp.title":"工作经验",
+    "exp.sub":"3年以上金融科技、证券及研究经历——构建风险控制、优化数据质量、推动AI驱动运营。",
+    "exp1.company":"金荣集团","exp1.role":"产品运营专员",
+    "exp1.date":"2024年6月 — 至今","exp1.location":"香港",
+    "exp1.p1":'为社区APP管理后台设计数据看板，消除前后端数据不一致；在缺陷扩散前修复<strong>7个模块中的50余个问题</strong>。',
+    "exp1.p2":'对3个版本迭代执行场景与兼容性测试，推动<strong>关闭300余个缺陷</strong>，把质量问题挡在生产环境之外。',
+    "exp1.p3":'搭建AI驱动的内容自动发布流水线，并通过上线后数据监控提前捕捉异常，减少人工操作与差错。',
+    "exp2.company":"香港理工大学","exp2.role":"研究助理（兼职）",
+    "exp2.date":"2022年12月 — 2024年5月","exp2.location":"香港",
+    "exp2.p1":'清洗并标准化放射肿瘤科多模态数据，达到研究级的准确性与完整性要求。',
+    "exp2.p2":'参与大数据分析报告平台升级，重构界面与交互逻辑，让临床终端用户更易上手。',
+    "exp3.company":"国投证券股份有限公司","exp3.role":"产品经理助理",
+    "exp3.date":"2022年2月 — 2022年8月","exp3.location":"中国深圳",
+    "exp3.p1":'以决策树模型进行客户分群，落地8个差异化触达场景，将销售转化率从13.45%提升至<strong>22.58%</strong>。',
+    "exp3.p2":'与研发团队协作搭建客户行为追踪机制识别风险信号；通过关联挖掘优化FAQ知识库，将AI转人工率降低<strong>13%</strong>。',
+    "exp4.company":"开思时代科技有限公司","exp4.role":"数据分析实习生",
+    "exp4.date":"2021年6月 — 2021年8月","exp4.location":"中国深圳",
+    "exp4.p1":'为11个区域的日常销售数据搭建交互式Tableau看板，支持数据驱动的业绩监控。',
+    "exp4.p2":'以高效SQL处理<strong>80余次数据需求</strong>，并沉淀标准化报告模板。',
+    "proj.title":"代表项目",
+    "proj.sub":"两个从零搭建的风险管理工具——自主设计、开发并部署的个人项目。",
+    "p1.name":"家庭财务风险监控台",
+    "p1.alt":"家庭财务风险监控台 — 看板界面预览",
+    "p1.desc":'家庭流动性与偿付风险监控看板：定义风险事件 \u2192 计量现状 \u2192 设定限额 \u2192 压力测试 \u2192 处置建议。双前端（HTML + Streamlit），共享计算引擎，数值误差 < 1港元。',
+    "p1.h1":"7条风险限额，红绿灯系统（绿/黄/红）",
+    "p1.h2":"10个预置压力情景 + 6个自定义实时滑块",
+    "p1.h3":"多币种支持（港元/美元/人民币），汇率可编辑",
+    "p2.name":"投资组合风险数据分析看板",
+    "p2.alt":"投资组合风险数据分析看板 — 看板界面预览",
+    "p2.desc":'投资组合风险分析看板：Python数据层 + 纯静态前端。计算VaR（历史+参数法）、CVaR、夏普/索提诺比率、Beta、最大回撤、HHI集中度、风险贡献——全部浏览器端实时计算，零后端依赖。',
+    "p2.h1":"VaR 与 CVaR（95%/99%，历史模拟法 + 参数法/方差-协方差法）",
+    "p2.h2":"7张ECharts图表、10张风险指标卡、17种币种后缀",
+    "p2.h3":"所有风险指标浏览器端计算，Python仅拉取原始数据",
+    "proj.code":"GitHub","proj.code2":"GitHub","proj.demo":"在线演示","proj.demo2":"在线演示",
+    "edu.title":"教育背景",
+    "edu1.school":"香港理工大学",
+    "edu1.degree":"信息技术理学硕士",
+    "edu1.date":"2022年9月 — 2024年1月 · 香港",
+    "edu1.courses":"<strong>主要课程：</strong>金融计算、人工智能概念、机器学习",
+    "edu2.school":"江西财经大学",
+    "edu2.degree":"信息管理与信息系统（金融科技）学士",
+    "edu2.date":"2017年9月 — 2021年6月 · 江西",
+    "edu2.courses":"<strong>主要课程：</strong>金融大数据分析、数据库开发、数学建模、经济学",
+    "edu2.award":"全国大学生数学建模竞赛一等奖（江西赛区，2019）",
+    "contact.title":"联系方式",
+    "contact.sub":"正在寻找香港的风险管理岗位，持IANG签证可合法在港工作，欢迎联系。",
+    "contact.emailLabel":"邮箱",
+    "footer.text":"\u00a9 2026 王嘉欢. 用心打造."
+  }
+};
+
+// ===== LANGUAGE TOGGLE =====
+let currentLang = 'en';
+
+function applyLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[lang] && i18n[lang][key]) {
+      el.innerHTML = i18n[lang][key];
+    }
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+    const key = el.getAttribute('data-i18n-alt');
+    if (i18n[lang] && i18n[lang][key]) {
+      el.setAttribute('alt', i18n[lang][key]);
+    }
+  });
+  const toggle = document.getElementById('langToggle');
+  toggle.textContent = lang === 'en' ? '中文' : 'EN';
+  document.title = (i18n[lang] && i18n[lang]['doc.title']) || document.title;
+  localStorage.setItem('lang', lang);
+}
+
+document.getElementById('langToggle').addEventListener('click', () => {
+  applyLang(currentLang === 'en' ? 'zh' : 'en');
+});
+
+// Initialize language (default English)
+const savedLang = localStorage.getItem('lang') || 'en';
+applyLang(savedLang);
+
+// ===== MOBILE MENU =====
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// ===== NAV SCROLL SHADOW =====
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+}, {passive: true});
+
+// ===== SCROLL ANIMATIONS =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+
+document.querySelectorAll('.fade-up, .stagger').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
